@@ -134,6 +134,7 @@ nav .closeMenu {
 /* home section css */
 .home-content {
   display: flex;
+  width:100%;
 
 }
 
@@ -237,7 +238,7 @@ nav .closeMenu {
   background-attachment: fixed;
   height: auto;
   width:100%;
-  padding-bottom:30px;
+  padding:30px 20px;
 }
 
 .about-content {
@@ -287,7 +288,9 @@ nav .closeMenu {
   list-style:none;
 }
 @media (max-width:800px) {
-
+  .about{
+    height:auto;
+  }
   .about-content {
     display: flex;
     flex-direction: column;
@@ -337,6 +340,7 @@ table td{
   background-size: cover;
   background-attachment: fixed;
   width:100%;
+  padding:10px 20px;
 }
 .skills-title{
   text-align: center;
@@ -419,11 +423,11 @@ table td{
   background-size: cover;
   background-attachment: fixed;
   width:100%;
+ padding:10px 30px 20px 30px;
 }
 .contact-content{
   padding-top:60px;
   display:flex;
-  justify-content:flex-end;
   padding-bottom:40px;
   
 }
@@ -478,9 +482,11 @@ textarea.invalid{
 }
 .info-title{
   color:whitesmoke;
+  text-align: center;
 }
 .info-list{
   list-style: none;
+  padding-left:40px;
 }
 .info-element{
   color:whitesmoke;
@@ -583,8 +589,9 @@ textarea.invalid{
 @media (max-width: 600px){
   .footer-title{
     font-size: 16px;
-    
+    padding-left:10px;
   }
+ 
   .name{
     padding-left:16px;
   }
@@ -593,5 +600,8 @@ textarea.invalid{
   }
   .footerTextFirst, .footerText{
     font-size:14px;
+  }
+  .footerList{
+    padding-left:5px;
   }
 }
