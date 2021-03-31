@@ -142,6 +142,7 @@ nav .closeMenu {
   display: flex;
   background: url("/img/background-home.jfif") no-repeat;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   height: 100vh;
   color: rgb(255, 255, 255);
@@ -182,12 +183,13 @@ nav .closeMenu {
 .image {
   display: flex;
   justify-content: center;
+ 
 }
 
 .photo {
   height: 400px;
   align-self: center;
-
+  margin-right:14px;
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 7px 5px 10px -6px rgba(0, 0, 0, 0);
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 7px 5px 10px -6px rgba(0, 0, 0, 0);
 }
@@ -228,7 +230,25 @@ nav .closeMenu {
     font-family: 'Akaya Telivigala', cursive;
   }
 }
+@media (max-width:320px){
 
+  .home .name{
+    padding: 114px 40px;
+  }
+  .text{
+    font-size:19px;
+  }
+  .text-2{
+    font-size:22px;
+  }
+  .text-3{
+    font-size:18px;
+  }
+  .image{
+    position: relative;
+    top: -45px;
+  }
+}
 /* Home section end */
 
 /* About section start */
@@ -236,7 +256,8 @@ nav .closeMenu {
   background: url("/img/background-about.jfif") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: auto;
+  background-position: center;
+  height: 100vh;
   width:100%;
   padding:30px 20px;
 }
@@ -262,7 +283,7 @@ nav .closeMenu {
 }
 
 .about-photo {
-  width: 500px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -314,6 +335,10 @@ nav .closeMenu {
 .education-title{
   text-align: center;
   color:whitesmoke;
+  padding-bottom:15px;
+  font-weight: 700;
+  font-size:22px;
+ 
 }
 table{
  width:100%;
@@ -336,7 +361,8 @@ table td{
 /* skills section start */
 .skills{
   background: url("img/skills-background.jfif") no-repeat;
-  height:auto;
+  height:115vh;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   width:100%;
@@ -418,10 +444,11 @@ table td{
 }
 /* contact section */
 .contact{
-  
+  height:100vh;
   background:url("img/contact-background.jfif") no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   width:100%;
  padding:10px 30px 20px 30px;
 }
@@ -429,6 +456,7 @@ table td{
   padding-top:60px;
   display:flex;
   padding-bottom:40px;
+  height:100%;
   
 }
 .contact-title{
@@ -475,10 +503,12 @@ textarea.invalid{
 .name{
   margin-top:5px;
   border-radius:4px;
+  padding-left:2px;
 }
 .textArea{
   margin-top:2px;
   height:10rem;
+  padding-left:2px;
 }
 .submit{
   float:right;
@@ -596,9 +626,6 @@ textarea.invalid{
     padding-left:10px;
   }
  
-  .name{
-    padding-left:16px;
-  }
   .footerEl{
     font-size:14px;
   }
