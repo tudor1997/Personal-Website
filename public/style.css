@@ -144,7 +144,7 @@ nav .closeMenu {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height:100vh;
   color: rgb(255, 255, 255);
   min-height: 500px;
   font-family: "Noto Sans JP", sans-serif;
@@ -257,7 +257,7 @@ nav .closeMenu {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh;
+  height: auto;
   width:100%;
   padding:30px 20px;
 }
@@ -361,7 +361,7 @@ table td{
 /* skills section start */
 .skills{
   background: url("img/skills-background.jfif") no-repeat;
-  height:115vh;
+  height:auto;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -444,7 +444,7 @@ table td{
 }
 /* contact section */
 .contact{
-  height:100vh;
+  height:auto;
   background:url("img/contact-background.jfif") no-repeat;
   background-size: cover;
   background-attachment: fixed;
