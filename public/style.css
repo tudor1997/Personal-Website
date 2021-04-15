@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: black;
+  background-color: rgba(176, 190, 190, 0.658);
 }
 nav {
   display: flex;
@@ -13,8 +13,7 @@ nav {
   background-color: rgb(0, 0, 0);
   border-radius: 2px;
   padding: 5px;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 7px 24px 35px 5px #000000;
-  box-shadow: 0px 10px 13px -7px #000000, 7px 24px 35px 5px #000000;
+  box-shadow: 1px 2px 10px 7px;
 }
 
 .navbar {
@@ -135,20 +134,16 @@ nav .closeMenu {
 .home-content {
   display: flex;
   width:100%;
-
+position:relative;
 }
 
 .home {
   display: flex;
-  background: url("/img/background-home.jfif") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height:100vh;
   color: rgb(255, 255, 255);
   min-height: 500px;
   font-family: "Noto Sans JP", sans-serif;
   width:100%;
+  
 }
 
 .home .name {
@@ -156,45 +151,85 @@ nav .closeMenu {
   padding: 150px 80px;
   margin: auto 0 auto 40px;
 }
-
+.circle{
+  border-radius: 50%;
+  background-color:#37405f1f;
+  height: 450px;
+  width:450px;
+  position: relative;
+  box-shadow: 2px 4px 30px 6px #37405f7e;
+}
+.circleMedium{
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  background-color:#4364da1f;
+  position:absolute;
+  z-index: -2;
+  top:0;
+  left:0;
+}
+.circleSmall{
+  height:80px;
+  width: 80px;
+  background-color:#122a817a;
+  z-index: -3;
+  border-radius:50%;
+  bottom:56px;
+  right:4px;
+  position:absolute;
+}
 .text {
+  position:absolute;
   font-size: 30px;
   font-family: 'Akaya Telivigala', cursive;
+  color:#4b86c2;
+  top:105px;
+  left:60px;
 }
 
 .text-2 {
+  position:absolute;
   font-size: 60px;
   font-weight: 600;
   margin-left: -3px;
   font-family: 'Akaya Telivigala', cursive;
+  color:#4b86c2;
+  top:140px;
+  left:30px;
 }
 
 .text-3 {
+  position:absolute;
   font-size: 40px;
   margin: 5px 0;
   font-family: 'Akaya Telivigala', cursive;
+  color:#4b86c2;
+  top:228px;
+  left:30px;
 }
 
 .job {
-  color: #89e6d9;
+  color: #37405f;
   
 }
 
 .image {
   display: flex;
   justify-content: center;
- 
+ width:70%;
 }
 
 .photo {
   height: 400px;
   align-self: center;
-  margin-right:14px;
+  margin:auto;
+  border-radius:20%;
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 7px 5px 10px -6px rgba(0, 0, 0, 0);
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 7px 5px 10px -6px rgba(0, 0, 0, 0);
 }
 
-@media (max-width:990px) {
+@media (max-width:1100px) {
   .home {
     height: auto;
     padding-bottom: 10px;
@@ -209,26 +244,36 @@ nav .closeMenu {
   }
   
   .photo {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
 
   }
+  .home .name {
+    padding: 150px 0px;
+    margin: auto 0 auto 40px;
+    display:flex;
+    justify-content:center;
+}
+.circle {
+  width: 420px;
+}
   .text {
-    font-size: 25px;
+    font-size: 30px;
   }
   
   .text-2 {
-    font-size: 50px;
+    font-size: 52px;
     font-weight: 600;
     margin-left: -3px;
     font-family: 'Akaya Telivigala', cursive;
   }
   
   .text-3 {
-    font-size: 30px;
+    font-size: 36px;
     margin: 5px 0;
     font-family: 'Akaya Telivigala', cursive;
   }
+  
 }
 @media (max-width:320px){
 
@@ -250,14 +295,142 @@ nav .closeMenu {
   }
 }
 /* Home section end */
-
+/* circles */
+.circleOne {
+  width: 400px;
+  height: 400px;
+  z-index: -2;
+  border-radius: 50%;
+  position:absolute;
+  background-color:rgba(51, 51, 163, 0.356);
+  top: 55%;
+  left: 50%;
+}
+.circleTwo{
+  width:350px;
+  height: 350px;
+  z-index: -3;
+  border-radius: 50%;
+  position:absolute;
+  background-color:rgba(51, 131, 163, 0.562);
+  top: 3%;
+  left: 68%;
+}
+.circleThree{
+  width:300px;
+  height:300px;
+  z-index: -2;
+  border-radius: 50%;
+  position:absolute;
+  background-color:rgba(7, 39, 88, 0.164);
+  top:0;
+  left:0;
+}
+.circleFour{
+  width:420px;
+  height:420px;
+  z-index: -2;
+  border-radius: 50%;
+  position:absolute;
+  background-color: rgba(137, 43, 226, 0.178);
+  top:0;
+  left:20%;
+}
+.circleFive{
+  width:370px;
+  height:370px;
+  z-index: -2;
+  border-radius: 50%;
+  position:absolute;
+  background-color: #0fc7ff3a;
+  top:-150%;
+  left:65%;
+}
+.circleSix{
+  width:350px;
+  height:350px;
+  z-index: -2;
+  border-radius: 50%;
+  position:absolute;
+  background-color: #0fff6b3a;
+  top:80%;
+  left:2%;
+}
+.circleSeven{
+  width:250px;
+  height:250px;
+  z-index: -2;
+  border-radius: 50%;
+  position:absolute;
+  background-color: #0f33ff3b;
+  top:160%;
+  left:59%;
+}
+.circleEight{
+  width:470px;
+  height:470px;
+  z-index: -2;
+  border-radius: 50%;
+  position:absolute;
+  background-color: #eb0fff1a;
+  top:0%;
+  left:0%;
+}
+.circleNine{
+  width:300px;
+  height:300px;
+  z-index: -2;
+  border-radius: 50%;
+  position:absolute;
+  background-color: #0fefff44;
+  top:-25%;
+  left:74%;
+}
+.circleTen{
+  width: 100px;
+  height:100px;
+  z-index: -2;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(92, 216, 177, 0.356);
+  top:-12%;
+  left:40%;
+  
+}
+@media (max-width:1100px){
+.circleOne{
+  display:none;
+}
+.circleTwo{
+  display:none;
+}
+.circleThree{
+  width:250px;
+  height:250px;
+}
+.circleFour{
+left:10%;
+}
+.circleFive{
+  display:none;
+}
+.circleSeven{
+  display:none;
+}
+.circleEight{
+  width:430px;
+  height:430px;
+  top:-14%;
+}
+.circleNine{
+  display:none;
+}
+.circleTen{
+  display:none;
+}
+}
 /* About section start */
 .about {
-  background: url("/img/background-about.jfif") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: auto;
   width:100%;
   padding:30px 20px;
 }
@@ -266,19 +439,20 @@ nav .closeMenu {
   display: flex;
   padding-top: 60px;
   padding-bottom:30px;
+  position:relative;
 }
 
 .about-title {
   text-align: center;
-  color: whitesmoke;
+  color:#4b86c2;
   padding: 20px;
   font-size: 40px;
   font-weight: 500;
-  text-decoration: underline;
+  font-family: 'Akaya Telivigala', cursive;
 }
 
 .about-text {
-  color: whitesmoke;
+  color:#4b86c2;
   margin-left:20px;
 }
 
@@ -289,8 +463,8 @@ nav .closeMenu {
 
 .download {
   text-decoration: none;
-  color: rgb(8, 81, 150);
-  border: 2px solid rgb(8, 81, 150);
+  color: black;
+  border: 2px solid black;
   padding: 4px;
   border-radius: 5px;
 }
@@ -304,6 +478,7 @@ nav .closeMenu {
 }
 .hobbies-title{
   text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
 }
 .hobbies{
   list-style:none;
@@ -332,26 +507,32 @@ nav .closeMenu {
   }
 }
 /* education  section*/
+.education-content{
+  position: relative;
+}
 .education-title{
   text-align: center;
-  color:whitesmoke;
+  color:#4b86c2;
   padding-bottom:15px;
-  font-weight: 700;
-  font-size:22px;
  
+  font-family: 'Akaya Telivigala', cursive;
 }
 table{
  width:100%;
+ 
 }
 table tr{
   text-align:center;
-  color:white;
+  color:#4b86c2;
+  
 }
 table th{
   padding-bottom:5px;
+ 
 }
 table td{
   padding-bottom:10px;
+ 
 }
 @media (max-width: 800px){
   table{
@@ -360,23 +541,20 @@ table td{
 }
 /* skills section start */
 .skills{
-  background: url("img/skills-background.jfif") no-repeat;
-  height:auto;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   width:100%;
   padding:10px 20px;
 }
 .skills-title{
   text-align: center;
-  text-decoration:underline;
+  color:#4b86c2;
   padding:20px;
+  font-family: 'Akaya Telivigala', cursive;
 }
 .skills-content{
+  position: relative;
   display: flex;
   margin-top:30px;
- 
+  color:#4b86c2;
 }
 .skills-content .card{
   margin-bottom:20px;
@@ -385,7 +563,7 @@ table td{
   font-size:18px;
   padding:10px;
   font-weight: 1000;
-  color:black;
+  color:#4b86c2;
 }
 .progress{
   margin:10px;
@@ -419,19 +597,22 @@ table td{
   display:block;
   padding-left:20px;
   padding-top:10px;
+  
 
 }
 .portfolio-content{
+  position: relative;
   display:flex;
   padding-bottom:20px;
  
 }
 .portfolio-title{
   text-align: center;
-  text-decoration: underline;
-
+  font-family: 'Akaya Telivigala', cursive;
+  color:#4b86c2;
 }
 .work-title{
+  color:#4b86c2;
   padding-top:20px;
   text-align: center;
   font-size: 17px;
@@ -444,30 +625,27 @@ table td{
 }
 /* contact section */
 .contact{
-  height:auto;
-  background:url("img/contact-background.jfif") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  
   width:100%;
  padding:10px 30px 20px 30px;
 }
 .contact-content{
+  position: relative;
   padding-top:60px;
   display:flex;
   padding-bottom:40px;
   height:100%;
-  
+  color:#4b86c2;
 }
 .contact-title{
   text-align: center;
   padding:20px;
-  color:whitesmoke;
-  text-decoration: underline;
+  color:#4b86c2;
+  font-family: 'Akaya Telivigala', cursive;
 
 }
 .emailMe{
-  color:whitesmoke;
+  color:#4b86c2;
   text-decoration: none;
 }
 .card{
@@ -493,12 +671,19 @@ textarea.invalid{
   flex-direction: column;
   border:0px;
 }
+.form-control label{
+  color:#4b86c2;
+}
 .form-control input{
   width:100%;
 }
 .contact-me-title{
   text-align: center;
   margin:10px;
+}
+::placeholder {
+  color:#4b86c2;
+  padding-left:2px;
 }
 .name{
   margin-top:5px;
@@ -515,15 +700,16 @@ textarea.invalid{
   margin:10px;
 }
 .info-title{
-  color:whitesmoke;
+  color:#4b86c2;
   text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
 }
 .info-list{
   list-style: none;
   padding-left:40px;
 }
 .info-element{
-  color:whitesmoke;
+  color:#4b86c2;
   padding:5px;
 }
 .fas, .far{
