@@ -589,6 +589,45 @@ table td{
     margin-bottom: 20px;
   }
 }
+/* services section */
+.services-title{
+  text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
+  color:#4b86c2;
+}
+.container-services {
+   display:flex;
+ 
+}
+.service{
+  border:2px solid rgb(63, 174, 189);
+  border-radius:10%;
+  background-color:rgb(63, 174, 189);
+  margin:10px 5px;
+  color:whitesmoke;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.service:hover{
+  border:2px solid rgb(14, 92, 102);
+  background-color:rgb(14, 92, 102);
+}
+.service-name{
+  text-align: center;
+}
+.service-icon{
+  color:rgb(63, 174, 189);
+  margin:10px 5px;
+  align-self: center;
+  background-color:whitesmoke;
+  border-radius: 50% ;
+  border:1px solid rgb(63, 174, 189);
+}
+.textService{
+  text-align: center;
+  margin:10px;
+}
 /* portfolio section */
 .img-portfolio{
   max-width:100%;
