@@ -628,6 +628,11 @@ table td{
   text-align: center;
   margin:10px;
 }
+@media screen and (max-width:700px){
+  .container-services{
+    flex-direction: column;
+  }
+}
 /* portfolio section */
 .img-portfolio{
   max-width:100%;
