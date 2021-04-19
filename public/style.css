@@ -159,6 +159,9 @@ position:relative;
   position: relative;
   box-shadow: 2px 4px 30px 6px #37405f7e;
 }
+.circle:hover{
+  background-color:#2a33532d;
+}
 .circleMedium{
   height:200px;
   width:200px;
