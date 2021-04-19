@@ -644,6 +644,7 @@ table td{
   display:block;
   padding-left:20px;
   padding-top:10px;
+  filter: drop-shadow(2px 4px 8px #585858);
   
 
 }
@@ -732,15 +733,23 @@ textarea.invalid{
   color:#4b86c2;
   padding-left:2px;
 }
-.name{
+.nameInput{
   margin-top:5px;
   border-radius:4px;
   padding-left:2px;
+  border: 1px solid #4b86c2;
+}
+.textArea:focus, .nameInput:focus{
+  outline: none;
+  border: 1px solid #16406b;
+  color:#1a71c7;
 }
 .textArea{
   margin-top:2px;
   height:10rem;
   padding-left:2px;
+  border: 1px solid #4b86c2;
+  border-radius:5px;
 }
 .submit{
   float:right;
